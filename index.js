@@ -1,8 +1,11 @@
 const express = require('express')
 const request = require('superagent')
 const xml2js = require('xml2js')
+const cors = require('cors')
 const app = express()
 const port = 3000
+
+app.use(cors());
 
 app.get('/', async (req, res) => {
 
